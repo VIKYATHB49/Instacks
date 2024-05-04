@@ -1,0 +1,219 @@
+nav{
+    width: 100%;
+    height: 40px;
+}
+.img{
+    margin-left: 2px;
+    margin-top: 0px;
+    width: 170px;
+    height: 40px;
+}
+body {
+overflow-x:hidden;
+overflow-y: auto;
+}
+.loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px; 
+    margin-left: -25px;
+    z-index: 9999;
+    display: none; 
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#openButton {
+position: absolute;
+background-color:rgb(38, 38, 60);
+color: white;
+border-radius: 5px;
+top:50%;
+right:0px;
+width: 25px;
+height: 50px;
+cursor: pointer;
+font-size:20px;
+}
+
+#container {
+position: fixed;
+top: 0;
+right: -250px;
+height: 100%;
+width: 250px;
+background-color: #f0f0f0;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: right 0.3s ease-in-out;
+overflow:hidden;
+}
+
+#closeButton {
+position: absolute;
+background-color:rgb(38, 38, 60);
+color: white;
+border-radius: 5px;
+top: 50%;
+width: 25px;
+height: 50px;
+right: 250px;
+cursor: pointer;
+font-size:20px;
+}
+table{
+width: 250px;
+height: 60%;
+margin-left: 10px;
+}
+.Qbutton{
+color:black;
+border-radius: 10px;
+width: 50px;
+height: 50px;
+font-size:larger;
+cursor: pointer;
+border:1px solid black;
+}
+.answer{
+margin-left: 10px;
+}
+.enterfullscreen{
+height: 40px;
+width: 150px;
+background-color: white;
+color:  rgb(90, 90, 202);
+border-color: rgb(90, 90, 202);
+border-radius: 5px;
+cursor: pointer;
+}
+.submit{
+height: 40px;
+width: 120px;
+color: white;
+background-color:rgb(51, 196, 70);
+border: transparent;
+margin-left: 10px;
+margin-right: 0px;
+border-radius: 5px;
+cursor:pointer;
+}
+.right{
+display: inline;
+float: right;
+}
+.section{
+background-color:rgb(248, 245, 245);
+display:flex;
+float: left;
+width: 100%;
+height: 40px;
+color: rgb(0, 0, 0);
+}
+.MCQ{
+height: 30px;
+width: 60px;
+margin-left: 10px;
+color: white;
+margin-top: 5px;
+background-color: rgb(90, 90, 202);
+border: transparent;
+border-radius: 6px;
+cursor: pointer;
+}
+.CODING{
+height: 30px;
+width: 80px;
+margin-left: 10px;
+margin-top: 5px;
+color: rgb(90, 90, 202);
+background-color: white;
+border-color: rgb(90, 90, 202);
+border-radius: 6px;
+cursor: pointer;
+}
+h3{
+float: left;
+margin-top: 10px;
+}
+.third{
+margin-top:40px;
+width: 100%;
+height: 40px;
+}
+.Report{
+color: red;
+width: 80px;
+height: 30px;
+background-color: white;
+border-color:red;
+border-radius: 5px;
+}
+.marks1{
+color: white;
+width: 35px;
+height: 35px;
+margin-top: 5px;
+margin-left: 8px;
+background-color: rgb(51, 196, 70);
+border-radius: 5px;
+border: transparent;
+}
+.marks2{
+color: white;
+width: 35px;
+height: 35px;
+margin-left: 8px;
+margin-top: 5px;
+background-color: rgb(219, 54, 54);
+border-radius: 5px;
+border: transparent;
+}
+hr{
+width: 100%;
+}
+.bottom{
+position:absolute;
+width: 100%;
+height: 40px;
+bottom: 0;
+background-color:rgb(248, 245, 245);
+}
+.clearResponse{
+float: left;
+color: white;
+background-color:  rgb(219, 54, 54);
+border-radius: 5px;
+width: 130px;
+height: 30px;
+border: transparent;
+cursor: pointer;
+}
+.save{
+float: right;
+background-color: rgb(90, 90, 202);
+color: white;
+border-radius: 5px;
+width: 100px;
+height: 30px;
+margin-right: 10px;
+border: transparent;
+cursor: pointer;
+}
+#containerA{
+width: 100%;
+height: 100%;
+max-height: fit-content;
+margin-left: 2px;
+}
+.questioncontainer {
+display: none;
+}

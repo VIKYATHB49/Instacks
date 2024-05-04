@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Spinner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Loader styles */
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animation */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px; /* Center vertically */
+  margin-left: -25px; /* Center horizontally */
+  z-index: 9999; /* Ensure loader is on top of other elements */
+  display: none; /* Initially hidden */
+}
+
+/* Keyframe animation for spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+</head>
+<body>
+  <!-- Loader element -->
+  <div class="loader" id="loader"></div>
+
+  <!-- Your webpage content -->
+  <div class="content" id="content">
+    <!-- Your webpage content here -->
+    <h1>Welcome to My Website</h1>
+    <!-- Example content -->
+  </div>
+
+  <!-- JavaScript to show/hide loader -->
+  <script src="script.js">
+    // Show loader when page starts loading
+window.addEventListener('load', function() {
+  var loader = document.getElementById('loader');
+  loader.style.display = 'block'; // Show loader
+});
+
+// Hide loader when page finishes loading
+window.addEventListener('load', function() {
+  var loader = document.getElementById('loader');
+  var content = document.getElementById('content');
+  
+  loader.style.display = 'none'; // Hide loader
+  content.style.display = 'block'; // Show content
+});
+
+// Optional: Show loader if page takes too long to load (e.g., due to slow internet)
+setTimeout(function() {
+  var loader = document.getElementById('loader');
+  if (loader.style.display !== 'none') {
+    loader.style.display = 'block'; // Show loader
+  }
+}, 5000); // Adjust timeout as needed (in milliseconds)
+
+  </script>
+</body>
+</html>

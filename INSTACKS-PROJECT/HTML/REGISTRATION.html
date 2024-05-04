@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="../CSS/REGISTRATION.css">
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <img src="../IMAGES/register.png">
+            </td>
+            <td>
+                <form action="./registration" method="post">
+                    <h2>Registration Page</h2>
+                    <label>Username:</label>
+                    <input type="text" id="username" name="username"  required>
+            
+                    <label>Hallticket ID:</label>
+                    <input type="text" id="hallticket_id" name="id"  required>
+            
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email"  required>
+            
+                    <label>Password:</label>
+                    <input type="password" id="password" name="password"  required>
+            
+                    <label for="batch">Batch:</label>
+                    <select id="batch" name="batch">
+                        <option value="2022-2026">2022-2026</option>
+                        <option value="2021-2025">2021-2025</option>
+                        <option value="2020-2024">2020-2024</option>
+                        <option value="2019-2023">2019-2023</option>
+                        <option value="2018-2022">2018-2022</option>
+            
+                    </select>
+            
+                    <label for="organisation">Organisation:</label>
+                    <select id="organisation" name="organisation">
+                        <option value="Anurag University">Anurag University</option>
+                        <option value="Anurag Group of institutions">Anurag Group of institutions</option>
+                        <option value="CMR College of Engineering">CMR College of Engineering</option>
+                        <option value="JNTU">JNTU</option>
+                        <option value="Mallareddy College of Engineering">Mallareddy College of Engineering</option>
+                        <option value="Mallareddy University">Mallareddy University</option>
+                        <option value="Mahindra University">Mahindra University</option>
+                        <option value="Nalla Malla Reddy Engineering College">Nalla Malla Reddy Engineering College</option>
+                        <option value="Osmania UNiversity">Osmania UNiversity</option>
+                        <option value="Sreenidhi institute of Science">Sreenidhi institute of Science</option>
+                        
+                    </select>
+                    <input type="submit"  class="button" value="Register">
+                </form>
+            </td>
+            <td>
+                <img src="../IMAGES/register2.jpeg">
+            </td>
+        </tr>
+    </table>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,370 @@
+<html>
+    <head>
+        <title>EXAM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="website icon" href="website-icon.png">
+        <link rel="stylesheet" href="../CSS/EXAM.css">
+    </head>
+    <body>
+        <div class="loader" id="loader"></div>
+        <div id="containerA">
+        <nav>
+        <img src="../IMAGES/anurag.png" class="img">
+        <div class="right">
+        <input type="submit" class="enterfullscreen" value="Enter Fullscreen">
+        <input type="submit" class="submit" value="Submit Test">
+        </div>
+        </nav>
+
+        <div class="section">
+            <h3>Section:</h3>
+            <input type="button" class="MCQ" value="MCQ">
+            <input type="button" class="CODING" value="CODING">
+        </div>
+<!--question1-->
+        <div id="question1">
+            <div class="third">
+                <h3>Ques 1 / 10:</h3>
+                <div class="right">
+                <input type="submit" class="Report" value="Report">
+                <label style="margin-left: 8px;"><b>Marks:</b></label>
+                <input type="submit" class="marks1" value="+1">
+                <input type="submit" class="marks2" value="-0">
+                </div>
+            </div>
+            <p>Who is the father of C language?</p>
+            <input type="radio" name="q1" value="Steve Jobs">Steve Jobs<br>
+            <input type="radio" name="q1" value="James Gosling">James Gosling<br>
+            <input type="radio" name="q1" value="Dennis Ritchie">Dennis Ritchie<br>
+            <input type="radio" name="q1" value="Rasmus Lerdorf">Rasmus Lerdorf<br>
+            <div class="bottom">
+                <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+                <button class="save" id="save" onclick="saveAnswer(1)">Save & Next</button>
+            </div>
+        </div>
+<!--question2-->
+        <div id="question2" class="questioncontainer">
+            <div class="third">
+                <h3>Ques 2 / 10:</h3>
+                <div class="right">
+                <input type="submit" class="Report" value="Report">
+                <label style="margin-left: 8px;"><b>Marks:</b></label>
+                <input type="submit" class="marks1" value="+1">
+                <input type="submit" class="marks2" value="-0">
+                </div>
+            </div>
+            <p>Which of the following is not a valid C variable name?</p>
+            <input type="radio" name="q2" value="int number;">int number;<br>
+            <input type="radio" name="q2" value="float rate;"> loat rate;<br>
+            <input type="radio" name="q2" value="int variable_count;">int variable_count;<br>
+            <input type="radio" name="q2" value="int $main;">int $main;<br>
+            <div class="bottom">
+                <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+                <button class="save" id="save" onclick="saveAnswer(2)">Save & Next</button>
+            </div>
+        </div>
+<!--question3-->
+        <div id="question3" class="questioncontainer">
+            <div class="third">
+                <h3>Ques 3 / 10:</h3>
+                <div class="right">
+                <input type="submit" class="Report" value="Report">
+                <label style="margin-left: 8px;"><b>Marks:</b></label>
+                <input type="submit" class="marks1" value="+1">
+                <input type="submit" class="marks2" value="-0">
+                </div>
+            </div>
+            <p>All keywords in C are in ____________</p>
+            <input type="radio" name="q3" value="LowerCase letters">LowerCase letters<br>
+            <input type="radio" name="q3" value="UpperCase letters">UpperCase letters<br>
+            <input type="radio" name="q3" value="CamelCase letters">CamelCase letters<br>
+            <input type="radio" name="q3" value="None of the mentioned">None of the mentioned<br>
+            <div class="bottom">
+                <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+                <button class="save" id="save" onclick="saveAnswer(3)">Save & Next</button>
+            </div>
+        </div>
+<!--question4-->
+        <div id="question4" class="questioncontainer">
+            <div class="third">
+                <h3>Ques 4 / 10:</h3>
+                <div class="right">
+                <input type="submit" class="Report" value="Report">
+                <label style="margin-left: 8px;"><b>Marks:</b></label>
+                <input type="submit" class="marks1" value="+1">
+                <input type="submit" class="marks2" value="-0">
+                </div>
+            </div>
+            <p>Which of the following is true for variable names in C?</p>
+            <input type="radio" name="q4" value="They can contain alphanumeric characters as well as special characters">They can contain alphanumeric characters as well as special characters<br>
+            <input type="radio" name="q4" value="It is not an error to declare a variable to be one of the keywords(like goto, static)">It is not an error to declare a variable to be one of the keywords(like goto, static)<br>
+            <input type="radio" name="q4" value="Variable names cannot start with a digit">Variable names cannot start with a digit<br>
+            <input type="radio" name="q4" value="Variable can be of any length">Variable can be of any length<br>
+            <div class="bottom">
+                <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+                <button class="save" id="save" onclick="saveAnswer(4)">Save & Next</button>
+            </div>
+        </div>
+<!--question5-->
+        <div id="question5" class="questioncontainer">
+            <div class="third">
+                <h3>Ques 5 / 10:</h3>
+                <div class="right">
+                <input type="submit" class="Report" value="Report">
+                <label style="margin-left: 8px;"><b>Marks:</b></label>
+                <input type="submit" class="marks1" value="+1">
+                <input type="submit" class="marks2" value="-0">
+                </div>
+            </div>
+            <p> Which is valid C expression?</p>
+            <input type="radio" name="q5" value="int my_num = 100,000;">int my_num = 100,000;<br>
+            <input type="radio" name="q5" value="int my_num = 100000;">int my_num = 100000;<br>
+            <input type="radio" name="q5" value="int my num = 1000;">int my num = 1000;<br>
+            <input type="radio" name="q5" value="int $my_num = 10000;">int $my_num = 10000;<br>
+            <div class="bottom">
+                <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+                <button class="save" id="save" onclick="saveAnswer(5)">Save & Next</button>
+            </div>
+        </div>
+<!--question6-->
+<div id="question6" class="questioncontainer">
+    <div class="third">
+        <h3>Ques 6 / 10:</h3>
+        <div class="right">
+        <input type="submit" class="Report" value="Report">
+        <label style="margin-left: 8px;"><b>Marks:</b></label>
+        <input type="submit" class="marks1" value="+1">
+        <input type="submit" class="marks2" value="-0">
+        </div>
+    </div>
+    <p>Which of the following cannot be a variable name in C?</p>
+    <input type="radio" name="q6" value="volatile">volatile<br>
+    <input type="radio" name="q6" value="true">true<br>
+    <input type="radio" name="q6" value="friend"> friend<br>
+    <input type="radio" name="q6" value="export"> export<br>
+    <div class="bottom">
+        <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+        <button class="save" id="save" onclick="saveAnswer(6)">Save & Next</button>
+    </div>
+</div>
+<!--question7-->
+<div id="question7" class="questioncontainer">
+    <div class="third">
+        <h3>Ques 7 / 10:</h3>
+        <div class="right">
+        <input type="submit" class="Report" value="Report">
+        <label style="margin-left: 8px;"><b>Marks:</b></label>
+        <input type="submit" class="marks1" value="+1">
+        <input type="submit" class="marks2" value="-0">
+        </div>
+    </div>
+    <p> What is short int in C programming?</p>
+    <input type="radio" name="q7" value="The basic data type of C">The basic data type of C<br>
+    <input type="radio" name="q7" value="Qualifier">Qualifier<br>
+    <input type="radio" name="q7" value="Short is the qualifier and int is the basic data type">Short is the qualifier and int is the basic data type<br>
+    <input type="radio" name="q7" value="All of the mentioned">All of the mentioned<br>
+    <div class="bottom">
+        <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+        <button class="save" id="save" onclick="saveAnswer(7)">Save & Next</button>
+    </div>
+</div>
+<!--question8-->
+<div id="question8" class="questioncontainer">
+    <div class="third">
+        <h3>Ques 8 / 10:</h3>
+        <div class="right">
+        <input type="submit" class="Report" value="Report">
+        <label style="margin-left: 8px;"><b>Marks:</b></label>
+        <input type="submit" class="marks1" value="+1">
+        <input type="submit" class="marks2" value="-0">
+        </div>
+    </div>
+    <p>Which of the following declaration is not supported by C language?</p>
+    <input type="radio" name="q8" value="String str;">String str;<br>
+    <input type="radio" name="q8" value="char *str;">char *str;<br>
+    <input type="radio" name="q8" value="float str = 3e2;">float str = 3e2;<br>
+    <input type="radio" name="q8" value="Both “String str;” and “float str = 3e2;”">Both “String str;” and “float str = 3e2;”<br>
+    <div class="bottom">
+        <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+        <button class="save" id="save" onclick="saveAnswer(8)">Save & Next</button>
+    </div>
+</div>
+<!--question9-->
+<div id="question9" class="questioncontainer">
+    <div class="third">
+        <h3>Ques 9 / 10:</h3>
+        <div class="right">
+        <input type="submit" class="Report" value="Report">
+        <label style="margin-left: 8px;"><b>Marks:</b></label>
+        <input type="submit" class="marks1" value="+1">
+        <input type="submit" class="marks2" value="-0">
+        </div>
+    </div>
+    <p> Which keyword is used to prevent any changes in the variable within a C program?</p>
+    <input type="radio" name="q9" value="immutable">immutable<br>
+    <input type="radio" name="q9" value="mutable">mutable<br>
+    <input type="radio" name="q9" value="const">const<br>
+    <input type="radio" name="q9" value="volatile"> volatile<br>
+    <div class="bottom">
+        <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+        <button class="save" id="save" onclick="saveAnswer(9)">Save & Next</button>
+    </div>
+</div>
+<!--question10-->
+<div id="question10" class="questioncontainer">
+            <div class="third">
+                <h3>Ques 10 / 10:</h3>
+                <div class="right">
+                <input type="submit" class="Report" value="Report">
+                <label style="margin-left: 8px;"><b>Marks:</b></label>
+                <input type="submit" class="marks1" value="+1">
+                <input type="submit" class="marks2" value="-0">
+                </div>
+            </div>
+            <p>What is the result of logical or relational expression in C?</p>
+            <input type="radio" name="q10" value="True or False">True or False<br>
+            <input type="radio" name="q10" value="0 or 1">0 or 1<br>
+            <input type="radio" name="q10" value="0 if an expression is false and any positive number if an expression is true">0 if an expression is false and any positive number if an expression is true<br>
+            <input type="radio" name="q10" value="None of the mentioned">None of the mentioned<br>
+            <div class="bottom">
+                <button class="clearResponse" onclick="clearResponse()">Clear Response</button>
+                <button class="save" id="save" onclick="saveAnswer(10)">Submit</button>
+            </div>
+        </div>
+
+
+        <div id="result" class="Questioncontainer">
+            <h2>Result:</h2>
+            <p id="score"></p>
+        </div>
+        
+              
+        <button id="openButton">></button>
+        <button id="closeButton"><</button>
+    </div>
+
+        <div id="container">
+            <table>
+                <tr><td><input type="submit" class="Qbutton" value="1"></td>
+                    <td><input type="submit" class="Qbutton" value="2"></td>
+                    <td><input type="submit" class="Qbutton" value="3"></td></tr>
+                <tr><td><input type="submit" class="Qbutton" value="4"></td>
+                    <td><input type="submit" class="Qbutton" value="5"></td>
+                    <td><input type="submit" class="Qbutton" value="6"></td></tr>
+                <tr><td><input type="submit" class="Qbutton" value="7"></td>
+                    <td><input type="submit" class="Qbutton" value="8"></td>
+                    <td><input type="submit" class="Qbutton" value="9"></td></tr>
+                <tr><td><input type="submit" class="Qbutton" value="10"></td>
+                <td></td>
+                <td></td></tr>
+              </table>
+            </div>
+
+
+
+
+
+        <script>
+
+
+        document.getElementById("closeButton").style.display = "none";
+        document.addEventListener('DOMContentLoaded', function () {
+        const openButton = document.getElementById('openButton');
+        const save = document.getElementById('save');
+        const container = document.getElementById('container');
+        const closeButton = document.getElementById('closeButton');
+        var containerA = document.getElementById('containerA');
+      
+        
+        openButton.addEventListener('click', function () {
+            container.style.right = '0';
+            containerA.style.width = 'calc(100% - 250px)';
+            containerA.style.marginRight = '250px';
+            save.style.marginRight = '260px';
+            openButton.style.display = 'none';
+            closeButton.style.display = 'block';
+
+        });
+        
+        closeButton.addEventListener('click', function () {
+            container.style.right = '-250px';
+            containerA.style.width = '100%';
+            save.style.marginRight = '10px';
+            openButton.style.display = 'block';
+            closeButton.style.display = 'none';
+        });
+        });
+
+    
+
+        let currentQuestion = 1;
+        let score = 0;
+
+    function saveAnswer() {
+        const selectedOption = document.querySelector(`input[name=q${currentQuestion}]:checked`);
+        if (selectedOption) {
+            if (selectedOption.value === "Dennis Ritchie" && currentQuestion === 1) {
+                score += 1;
+            }
+            if (selectedOption.value === "int $main;" && currentQuestion === 2) {
+                score += 1;
+            }
+            if (selectedOption.value === "LowerCase letters" && currentQuestion === 3) {
+                score += 1;
+            }
+            if (selectedOption.value === "Variable names cannot start with a digit" && currentQuestion === 4) {
+                score += 1;
+            }
+            if (selectedOption.value === "int my_num = 100000;" && currentQuestion === 5) {
+                score += 1;
+            }
+            if (selectedOption.value === "volatile" && currentQuestion === 6) {
+                score += 1;
+            }
+            if (selectedOption.value === "Short is the qualifier and int is the basic data type" && currentQuestion === 7) {
+                score += 1;
+            }
+            if (selectedOption.value === "String str;" && currentQuestion === 8) {
+                score += 1;
+            }
+            if (selectedOption.value === "const" && currentQuestion === 9) {
+                score += 1;
+            }
+            if (selectedOption.value === "0 or 1" && currentQuestion === 10) {
+                score += 1;
+            }
+            currentQuestion++;
+            if (currentQuestion <= 10) {
+                document.getElementById(`question${currentQuestion - 1}`).style.display = "none";
+                document.getElementById(`question${currentQuestion}`).style.display = "block";
+            } else {
+                document.getElementById("question3").style.display = "none";
+                document.getElementById("result").style.display = "block";
+                document.getElementById("score").innerText = `Your score is: ${score}`;
+            }
+        } else {
+            alert("Please select an option.");
+        }
+    }
+    window.addEventListener('load', function() {
+  var loader = document.getElementById('loader');
+  loader.style.display = 'block'; // Show loader
+});
+
+
+window.addEventListener('load', function() {
+  var loader = document.getElementById('loader');
+  var content = document.getElementById('content');
+  
+  loader.style.display = 'none'; // Hide loader
+  content.style.display = 'block'; // Show content
+});
+setTimeout(function() {
+  var loader = document.getElementById('loader');
+  if (loader.style.display !== 'none') {
+    loader.style.display = 'block'; // Show loader
+  }
+}, 5000);
+    </script>
+    </body>
+</html>

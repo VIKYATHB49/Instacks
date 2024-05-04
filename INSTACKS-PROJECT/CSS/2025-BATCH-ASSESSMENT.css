@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    font-family: 'Nunito', sans-serif;
+    
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    justify-content: space-around;
+}
+.logout{
+    font-size:medium;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: rgb(67, 67, 255);
+}
+a:active {
+    color: rgb(67, 67, 255);
+}
+.logo{
+    width: 280px;
+    height: 60px;
+}
+.content{
+    margin-top: 90px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.batch-assessment{
+    border-radius: 10px;
+    height: 210px;
+    background-color: rgb(20, 20, 67);
+    border: none;
+    color: white;
+}
+.type{
+cursor:text;
+background-color: rgba(117, 255, 98, 0.2);
+color:rgb(0, 194, 0);
+margin-right: 5px;
+padding:5px;
+font-weight:bold;
+border-radius: 5px;
+font-size: smaller;
+}
+.test{
+    width: 250px;
+    height: 260px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #a09f9f;
+    border-width: 1px;
+}
+h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 20ch;
+    font-weight: 100;
+}
+.about-us{
+    margin-top: 100px;
+    width: 100%;
+    height: 330px;
+    background-color: black;
+}
+.Attempt{
+    width: 190px;
+    height: 40px;
+    border:1px solid black;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+.Attempt:hover {
+    background-color:rgb(32, 31, 31);
+    color: white;
+}
+.in-test{
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.comment{
+width: 55px;
+height: 55px;
+position: fixed;
+bottom: 15;
+left: 15;
+border: none;
+cursor: pointer;
+outline: none;
+}
+.light-colour{
+color: #888;
+}
+table{
+margin-top: 50px;
+border-collapse: collapse;
+
+}
+td{
+padding-bottom: 30px;
+padding-right: 30px;
+}
+
+.about{
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: rgb(0, 0, 0);
+height: auto;
+width: 100%;
+display: flex;
+color: white;
+justify-content:space-evenly
+}
+.p{
+color: rgb(183, 183, 183);
+text-decoration: none;
+}
+.img{
+width:auto;
+height: 100px;
+}
+li{
+padding: 5px;
+}

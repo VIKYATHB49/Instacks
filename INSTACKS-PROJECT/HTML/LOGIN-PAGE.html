@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Instacks
+        </title>
+        <link rel="website icon" href="website-icon.png">
+        <link rel="stylesheet" href="../CSS/LOGIN-PAGE.css">
+    </head>
+    <body>
+        <table align="center">
+            <tr>
+                <td>
+                    <img src="../Images/login-photo.png" alt="login" class="login">
+
+                </td>
+                <td>
+                    <form action="./login" method="post">
+                        <div class="center">
+                        <img src="../Images/anurag.png" alt="logo" class="logo">
+                        <p><b>LOGIN</b></p>
+                        </div>
+                        <label><b>Your Email</b></label><br>
+                        <div class="icons">
+                            <img src="../Images/user.png" class="icon">
+                            <input type="text" placeholder="Email" class="input" name="email" autocomplete="off" required>
+                        </div>
+                        
+                        <label><b>Password</b></label><br>
+                        <div class="icons">
+                            <img src="../Images/key.png" class="icon">
+                            <input type="password" placeholder="Password"  id="password"   name="password" class="input"  autocomplete="off" required></div>
+                        <label>
+                            <input type="checkbox" class="checkbox" onclick="Visibility()"><b>Show   Password</b></label>
+                        <a href="#" style="float: right;margin-right: 15px; padding: 5px;">Forgot Password ?</a><br>
+                        <p style="text-align: center;">Don't have an account?<a href="REGISTRATION.html">Sign up</a></p>
+                        <input type="submit" class="sign-in" value="Sign in">
+
+                </td>
+            </tr>
+        </table>
+            <script>
+                function Visibility() {
+                    const passwordInput = document.getElementById('password');
+                    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+                }
+            </script>
+            </form>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfnbnLxNJLGsspSvQsZllPLwwJHzXrSKxQWLGlRGqKsqKXnLQDkxshgSdcXlfxBVqBFVML">
+            <input type="image" src="../Images/report.png" class="comment"></a>
+
+    </body>
+ </html>

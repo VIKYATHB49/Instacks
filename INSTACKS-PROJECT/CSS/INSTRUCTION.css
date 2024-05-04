@@ -1,0 +1,71 @@
+h2{
+    text-align: left;
+    font-size:large;
+    color: rgb(49, 49, 49);
+ }
+ body{
+     background-color: white;
+     font-family: cursive;
+     margin: 0;
+     padding-left: 75px;
+     padding-right: 40px;
+ }
+ ol{
+     margin-left: 10px;
+ }
+ li{
+    word-spacing: 3px;
+    font-family:sans-serif;
+ }
+ .box{
+     float: left;
+     width: 20px;
+     height: 20px;
+     cursor: pointer;
+ }
+ .submit{
+     color: white;
+     background-color: rgb(113, 113, 210);
+     width: 100px;
+     height:40px;
+     font-size: 20px;
+     border-radius: 5px;
+     border-color: transparent;
+     cursor: pointer;
+
+ }
+ .content{
+     float: left;
+ }
+ input[type="checkbox"] {
+     border-color:blue;
+ }
+ table{
+     margin: 0;
+     border-collapse: collapse;
+ }
+ .paragraph{
+     padding-left: 20px;
+     font-size: 85%;
+ }
+ .about{
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: rgb(0, 0, 0);
+height: auto;
+width: 100%;
+display: flex;
+color: white;
+justify-content:space-evenly
+}
+.p{
+color: rgb(183, 183, 183);
+text-decoration: none;
+}
+.img{
+width:auto;
+height: 100px;
+}
+li{
+padding: 5px;
+}

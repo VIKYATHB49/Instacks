@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Instacks | Assessment Instruction</title>
+        <link rel="website icon" href="website-icon.png">
+        <link rel="stylesheet" href="../CSS/INSTRUCTION.css">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="content">
+            <h2>Instructions:</h2>
+        
+        <ol>
+            <li>The countdown timer in the top of the screen will display the remaining time avilable for you to complete the examination.when the timer reaches zero,the examination will end by itself.You will not be required to end or submit your examination.</li><br>
+            <li>The Question Palette displayed onthe right side of screen will show the status of each question using one of the following symbolic:</li><br>
+            <li>You can navigate from one question to any question any time using the Question Palette by directly clicking on the questio number.(for linear,this point should be in opposite)</li><br>
+            <li>Click on <b>Save and Next</b> to save your answer for the current question and then go to the next question.</li><br>
+            <li>To select your answer for the question,click on the button of one of the options.</li><br>
+            <li>To deselect your chosen answer,click on the button of clear response.</li><br>
+            <li>To change your chosen answer,click on the button of another option</li><br>
+            <li>After clicking on the <b>Save and Next</b> button on the last question for a section, you will automatically be taken to the first question of the next question.</li><br>
+            <li>For every <b>Coding Question</b> You have to click on the <b>Sumbit Code</b>. Otherwise, it will bemarked as not attempted.</li><br>
+        </ol><br>
+        <hr>
+        <form id="myForm">
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" class="box" id="myCheckbox">
+
+                </td>
+                <td>
+                    <p class="paragraph">I have read and understood the instructions.All computer hardware allotted to me are in proper working condition . I declare that I am not in possession of/not wearing /
+                        not carrying any prohibited gadget like mobile phone, bluetooth device etc. /any prohibited material with me into the Examination Hall.I agree that in case of not adhering
+                        to the instruction, I shall be liable to be debarred from this test and/or to disciplinary action, whichmay include ban from future Test / Examinations</p>
+
+                </td>
+            </tr>
+        </table>
+             
+            
+        </div>
+        <div align="center">
+            <input type="submit" class="submit" value="Continue">
+        </div>
+        
+    </form>
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var checkbox = document.getElementById('myCheckbox');
+            if (checkbox.checked) {
+                window.location.href = 'EXAM.html';
+            } else {
+                
+            }
+        });
+        </script>
+    </body>
+</html>
